@@ -44,6 +44,26 @@ export class SolicitudDepositoComponent implements OnInit {
 
   guardar() {
     const data = new Prospecto();
+    if(this.form.value.tipoDocumentoId == null)
+    {
+      Swal.fire({
+        position: 'center',
+        icon: 'warning',
+        title: 'Seleccione un tipo de documento.',
+        showConfirmButton: true
+      });
+      return;
+    }
+    if(this.form.value.departamentoId == null)
+    {
+      Swal.fire({
+        position: 'center',
+        icon: 'warning',
+        title: 'Seleccione un departamento.',
+        showConfirmButton: true
+      });
+      return;
+    }
     data.nombres = this.form.value.nombre;
     data.apellidos = this.form.value.apellido;
     data.tipoDocumentoId = this.form.value.tipoDocumentoId;
