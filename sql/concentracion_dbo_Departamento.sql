@@ -15,4 +15,3 @@ INSERT INTO concentracion.dbo.Departamento (Nombre, Estado) VALUES ( N'Apurimac'
 INSERT INTO concentracion.dbo.Departamento ( Nombre, Estado) VALUES ( N'Ayacucho', 1);
 INSERT INTO concentracion.dbo.Departamento  (Nombre, Estado) VALUES ( N'Cajamarca', 1);
 INSERT INTO concentracion.dbo.Departamento ( Nombre, Estado) VALUES ( N'Cusco', 1);
-SELECT * FROM Departamento
